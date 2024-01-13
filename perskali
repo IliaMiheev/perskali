@@ -1,0 +1,36 @@
+1) Установи telegram 
+2) Установи alias для быстрого обновления пакетов:
+
+открой редактор namo "nano .zshrc"
+в конце впиши "alias ='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'"
+потом перезагрузи комп. reboot
+
+3) Установи необходимые зависимости для vs Code
+
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+4) Установи Tor Browser, onionshare, VS Code
+
+sudo apt update
+sudo apt install -y tor torbrowser-launcher onionshare code
+
+5) Чтобы поменять язык в VS Code
+
+установи плагин для русского языка (в магазине введи lang и выбери плагин со словом "Русский")
+Зайди в VS и нажми ctrl+Shift+P, напиши lang и из выпадающего списка выбери "Configure Display Language"
+
+5) Дальше поменяй язык ОС Linux
+
+sudo dpkg-reconfigure locales
+Выбирай ru_RU
+Установи этот язык по для всей системы
+Перезагрузи комп.
+
+6)Настрой панель задач
+
+Нажми на панель задач ПКМ, выбери "панель -> добавить новые элементы", добавь Раскладку клавиатуры, Дата и время, Проверка свободного места. 
+Удали Часы, Уведомления, Громкость.
+Зайди в настройки Кнопок окон и отмени группировку окон.
