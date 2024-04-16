@@ -1,9 +1,9 @@
 1) Установи telegram 
 2) Установи alias для быстрого обновления пакетов:
 
-открой редактор namo "nano .zshrc"
+открой редактор nano "nano .zshrc"
 в конце впиши "alias ='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'"
-потом перезагрузи комп. reboot
+потом перезагрузи комп.
 
 3) Установи необходимые зависимости для vs Code
 
