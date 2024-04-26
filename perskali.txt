@@ -1,16 +1,24 @@
 1) Установи telegram 
+sudo apt install telegram-desktop
 2) Установи alias для быстрого обновления пакетов:
 
-открой редактор nano "nano .zshrc"
-в конце впиши "alias ='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'"
+открой редактор nano в домашней директории "nano .zshrc"
+в конце впиши 
+"
+alias upd='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
+"
 потом перезагрузи комп.
 
-3) Установи необходимые зависимости для vs Code
+3) Установи необходимые зависимости для vs Code. Они могут меняться так что сравни с официальным сайтом
+"
+https://code.visualstudio.com/docs/setup/linux
+"
 
-sudo apt update
-sudo apt install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
 
 4) Установи Tor Browser, onionshare, VS Code
 
