@@ -1,13 +1,17 @@
-1) Установи telegram 
-sudo apt install telegram-desktop
-2) Установи alias для быстрого обновления пакетов:
+                       ВЫПОЛНЯЙ КОМАНДУ upd ПОСЛЕ КАЖДОГО ПУНКТА
+1) Установи alias для быстрого обновления пакетов:
 
 открой редактор nano в домашней директории "nano .zshrc"
 в конце впиши 
 "
 alias upd='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
 "
-потом перезагрузи комп.
+потом перезагрузи комп и выполни команду:
+upd
+
+2) Установи telegram 
+sudo apt install telegram-desktop
+Если не получиться, то просто установи через архив скачав его с официального сайта
 
 3) Установи необходимые зависимости для vs Code. Они могут меняться так что сравни с официальным сайтом
 "
@@ -22,7 +26,6 @@ rm -f packages.microsoft.gpg
 
 4) Установи Tor Browser, onionshare, VS Code
 
-sudo apt update
 sudo apt install -y tor torbrowser-launcher onionshare code
 
 5) Чтобы поменять язык в VS Code
@@ -40,5 +43,8 @@ sudo dpkg-reconfigure locales
 6)Настрой панель задач
 
 Нажми на панель задач ПКМ, выбери "панель -> добавить новые элементы", добавь Раскладку клавиатуры, Дата и время, Проверка свободного места. 
-Удали Часы, Уведомления, Громкость.
+Удали Часы, Уведомления, Громкость, Менеджер питания, .
 Зайди в настройки Кнопок окон и отмени группировку окон.
+
+7) Установи Node.js
+sudo apt install nodejs
