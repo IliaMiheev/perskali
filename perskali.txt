@@ -48,3 +48,16 @@ sudo dpkg-reconfigure locales
 
 7) Установи Node.js
 sudo apt install nodejs
+
+
+8) По умолчанию экран бедет гаснуть и требовать повторного ввода логина и пароля через пятнадцать минут. Это не удобно.
+Найди Менеджер питания --> Дисплей и переведи все ползунки на максимальное значение
+
+9) Установи переводчик TWP - Translate Web Pages by Filipe Dev в Tor Browser и Mozila Firefox
+"
+https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+"
+потом зайди в настройки переводчика (more options) и поставь "Extension user interface language" в значении "русский - Russian",
+потом поменяй настройки так чтоб страница переводилась на русский. Там всего лишь надо поменять одно поле.
+
+10) Установи расширения для VS Code: Auto rename tag, indent rainbow, live server, material theme, material theme icons, emmet, path autocomplit, prettier, vscode-icons,
