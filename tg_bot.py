@@ -4,9 +4,6 @@ from time import sleep
 from telebot import types
 import telebot
 
-with open('./all_text.json', encoding='utf8') as json_file:
-    data = json.load(json_file)
-# print(data)
 
 bot = telebot.TeleBot('7263442278:AAFCUcEdutpxcDIdyuFhduEscocmW4_rJ0Q')
 
