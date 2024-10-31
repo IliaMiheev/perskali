@@ -23,7 +23,8 @@ def handle_document(message):
 
     # Читаем содержимое файла и отправляем текст пользователю
     with open(message.document.file_name, 'r', encoding='utf-8') as file:
-        text = json.load(file)
+        text = json.load(file)[5:11]
+        text.reverse()
         keyboard = types.InlineKeyboardMarkup()
         button = types.InlineKeyboardButton("Удалить сообщение", callback_data=message.message_id)
         keyboard.add(button)
