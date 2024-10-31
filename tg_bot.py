@@ -9,7 +9,7 @@ bot = telebot.TeleBot('7263442278:AAFCUcEdutpxcDIdyuFhduEscocmW4_rJ0Q')
 
 @bot.message_handler(commands=['start'])
 def start_command(message):
-    bot.send_message(message.chat.id, 'Привет')
+    bot.send_message(message.chat.id, 'Привет! Отправь мне файл JSON с выборами из КР и я помогу тебе в прохождении')
 
 @bot.message_handler(content_types=['document'])
 def handle_document(message):
